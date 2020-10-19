@@ -1,0 +1,12 @@
+{
+    "Name": "Linus laying down",
+    "Author": "Apec",
+    "Version": "1.0.0",
+    "Description": "Just a sprite I need to the event",
+    "UniqueID": "Apec.CP.LinusLayingDown",
+    "MinimumApiVersion": "3.0.0",
+    "UpdateKeys": [],
+    "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher"
+    }
+  }

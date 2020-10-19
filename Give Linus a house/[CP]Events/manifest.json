@@ -1,0 +1,12 @@
+{
+    "Name": "Give Linus a house",
+    "Author": "Apec",
+    "Version": "1.0.0",
+    "Description": "Make Linus have a better living, by gifting him a house.",
+    "UniqueID": "Apec.CP.GiveLinusAHouse",
+    "MinimumApiVersion": "3.0.0",
+    "UpdateKeys": [],
+    "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher"
+    }
+  }

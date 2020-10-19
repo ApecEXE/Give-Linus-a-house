@@ -1,0 +1,18 @@
+{
+    "Format": "1.18.0",
+    "Changes":[
+        {
+            "LogName": "Sprite",
+            "Action": "Load",
+            "Target": "Characters/Linus3",
+            "FromFile": "assets/img/sprite.png",
+        },
+
+        {
+            "LogName": "Portraits",
+            "Action": "Load",
+            "Target": "Portraits/Linus3",
+            "FromFile": "assets/img/portrait.png",
+        }
+    ]
+}

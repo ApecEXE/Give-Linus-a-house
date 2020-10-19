@@ -1,0 +1,13 @@
+{
+    "Name": "Give Linus a house",
+    "Author": "Apec",
+    "Version": "1.0.0",
+    "Description": "Make Linus have a better living, by gifting him a house.",
+    "UniqueID": "Apec.QF.GiveLinusAHouse",
+    "MinimumApiVersion": "3.6.0",
+    "UpdateKeys": [],
+    "ContentPackFor": {
+      "UniqueID": "PurrplingCat.QuestFramework",
+      "MinimumVersion": "1.0.0-alpha"
+    }
+  }
