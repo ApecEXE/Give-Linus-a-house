@@ -11,11 +11,41 @@
         },
 
         {
+            "LogName": "Wants the house",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Wizard",
+            "Entries": {
+                "wantHouse": "Hmm, Linus is a friend of mine, but he already refused gifts like that.#$b#He likes the forest and nature, maybe if the Junimos built him a house, he would accept it.#$b#To summon the Junimos, I need you to bring me a Ancient Fruit. After that, we can ask them together",
+                "wantMoney": "What? No! Leave, now."
+            }
+        },
+
+        {
             "LogName": "Wizard Event",
             "Action": "EditData",
             "Target": "Data/Events/WizardHouse",
             "Entries": {
-                "59300002/e 59300001": "WizardSong/0 15/farmer 300 300 0 Wizard 10 13 0/skippable/pause 2000/warp farmer 8 24 0/playSound doorClose/pause 1000/textAboveHead Wizard \"Come in.\"/pause 1000/move farmer 0 -6 0/pause 500/move Wizard -2 0 0/move Wizard 0 4 2/pause 500/speak Wizard \"I know why you are here @. The incident with Linus, but I do not know you desires#$b#$q 59300003 null#Enlighten me.#$r 59300003 0#I would like to build him a house.#$r 59300004 0#Can you make me rich?\"/fork 59300004/speak Wizard \"What? No, leave. Now/pause 2000/end "
+                "59300002/e 59300001": "WizardSong/0 15/farmer 300 300 0 Wizard 10 13 0/skippable/pause 2000/warp farmer 8 24 0/playSound doorClose/pause 1000/textAboveHead Wizard \"Come in.\"/pause 1000/move farmer 0 -6 0/pause 500/move Wizard -2 0 0/move Wizard 0 4 2/pause 500/speak Wizard \"I know why you are here @. The incident with Linus, but I do not know your desires\"/pause 500/speak Wizard \"$q 59300003 null#Enlighten me.#$r 59300003 0 wantHouse#I would like to build him a house.#$r 59300004 0 wantMoney#Can you make me rich?\"/pause 2000/end "
+            }
+        },
+
+        {
+            
+            "LogName": "Junimo Summon",
+            "Action": "EditData",
+            "Target": "Data/Events/WizardHouse",
+            "Entries": {
+                "59300005/e 59300002/t 2100 2200/i 454": "WizardSong/0 15/farmer 300 300 0 Wizard 2 14 0 Junimo 300 300 0/skippable/pause 2000/warp farmer 8 24 0/playSound doorClose/pause 1000/move farmer 0 -5 0/faceDirection Wizard 2/pause 1500/move Wizard 0 3 2/move Wizard 6 0 2/pause 1000/speak Wizard \"Good, you are here. Give me the fruit so we can begin...\"/pause 1000/move farmer 0 -1 0/pause 500/removeItem 454/pause 1000/speak Wizard \"This is of immense power, pay close atention now.\"/pause 500/animate Wizard false true 2000 18/pause 1000/stopAnimation Wizard 0/pause 500/faceDirection Wizard 1/pause 1000/animate Wizard false true 4000 19/pause 3000/screenFlash 1/playSound wand/warp Junimo 10 17 4/animate Junimo false true 100 1 2 3 4 5 6 7 8/pause 2500/speak Wizard \"Oh Junimos, your savior has an asking.$0\"/pause 500/speak Wizard \"pss.. @, ask now..\"/question null \"#I want the forest to build Linus a house#?\"/stopAnimation Junimo 0/pause 1500/animate Junimo false true 100 12 13 14 15 15/pause 2000/screenFlash 1/playSound wand/warp Junimo 300 300 0/pause 1000/stopAnimation Wizard 0/pause 2000/speak Wizard \"Well.. I guess is a question of time. They like to work at night.#$b#Go see Linus in the morning. Goodbye @. May the forest protect you.\"/pause 1500/animate Wizard false true 1000 16/pause 1000/screenFlash 1/playSound wand/warp farmer 300 300 0/pause 2000/globalFade/viewPort 1000 1000/end"
+            }
+        },
+
+        {
+
+            "LogName": "Whatever",
+            "Action": "EditData",
+            "Target": "Data/Events/Mountain",
+            "Entries": {
+                "59300006/t 800 2100": "junimoStarSong/0 -130/farmer 300 300 1 Linus 25 8 2 RedJunimo 27 10 2 PurpleJunimo 24 6 2 BlueJunimo 16 9 2/skippable/animate RedJunimo false true 100 1 2 3 4 5 6 7 8/animate PurpleJunimo false true 100 1 2 3 4 5 6 7 8/animate BlueJunimo false true 100 1 2 3 4 5 6 7 8/pause 1000/warp farmer 0 12 1/pause 5000/end"
             }
         }
     ]

@@ -3,13 +3,12 @@
     "Quests": [
       {
         "Name": "linus_house",
-        "Type": "ItemDelivery",
+        "Type": "Location",
         "Title": "Linus need shelter",
         "Description": "Linus passed out last night due to cold, he needs somewhere better to live",
         "Objective": "Talk to The Wizard",
         "Cancelable": true,
-        "Trigger": "Wizard 454",
-        "ReactionText": "Ohh this fruit is of immense power $1#$b#Come back to my tower exactly at midnight, then we can start",
+        "Trigger": "WizardHouse",
         "Hooks": [
           {
             "When": "Tile",
@@ -21,17 +20,36 @@
             "Action": "Accept"
           }
         ]
+      },
+
+      {
+        "Name": "give_fruit",
+        "Type": "Location",
+        "Title": "Ask the forest",
+        "Description": "The Wizard said the Junimos can help. But he needs an Ancient Fruit at 10pm",
+        "Objective": "Bring the Wizard an Ancient Fruit at 10pm",
+        "Cancelable": true,
+        "Trigger": "WizardHouse",
+        "Hooks":[
+          {
+            "When": "Tile",
+            "Has":{
+              "Location": "WizardHouse",
+              "EventSeen": "59300002",
+              "not:EventSeen": "59300005"
+            },
+            "Action": "Accept"
+          },
+
+          {
+            "When": "Tile",
+            "Has":{
+              "EventSeen": "59300005"
+            },
+            "Action": "Complete"
+          }
+        ]
       }
-    ],
-    "Offers":[
-        {
-            "QuestName": "linus_house",
-            "OfferedBy": "NPC",
-            "OfferDetails":{
-                "NpcName": "Wizard",
-                "DialogueText": "Hmm, I think I can summon the Junimos and ask to build him something, the Junimos like him, he respects the nat$0#$b#To do the summoning, I need you @ to bring me an Ancient Fruit.$0#$b#Then we can ask the Junimos what you desire."
-            }
-        }
     ]
   }
   

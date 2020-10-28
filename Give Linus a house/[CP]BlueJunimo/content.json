@@ -1,0 +1,11 @@
+{
+    "Format": "1.18.0",
+    "Changes":[
+        {
+            "LogName": "Sprite",
+            "Action": "Load",
+            "Target": "Characters/BlueJunimo",
+            "FromFile": "assets/img/sprite.png",
+        }
+    ]
+}
